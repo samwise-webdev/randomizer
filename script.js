@@ -7,9 +7,9 @@ bgColorBtn.addEventListener('click', function() {
 })
 
 
-function btnStyle() {
-
-}
+btnStyle.addEventListener('click', function () {
+    //apply classes - idk if I will have to make the classes into numbered variables and then apply them that way or not
+})
 
 const randomColor = () => {
     const r = Math.floor(Math.random() * 255);
