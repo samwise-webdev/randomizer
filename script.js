@@ -1,5 +1,5 @@
-const bgColorBtn = document.querySelector('#bgBtn')
-const bgStyleBtn = documet.querySelector('#styleBtn')
+const bgColorBtn = document.querySelector('#bgBtn');
+const bgStyleBtn = document.querySelector('#styleBtn');
 
 bgColorBtn.addEventListener('click', function() {
     const newColor = randomColor();
