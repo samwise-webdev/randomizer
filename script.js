@@ -21,12 +21,19 @@ function randomizedStyle() {
     //  let style1 = document.querySelector('.btnStyle1');
     //  let style2 = document.querySelector('.btnStyle2');
     //  let style3 = document.querySelector('.btnStyle3');
-     
+    function oneToThree(){
+        let num1to3 = Math.floor(Math.random() * 3 + 1);
+        if (num1to3 === 3) {
+            return 3;
+         } else if (num1to3 === 2) {
+            return 2;
+         } else {
+            return 1;
+         }
+     }
 }
 
-function oneToThree(){
-   let num1to3 = Math.floor(Math.random() * 3 + 1);
-}
+
 
 const randomColor = () => {
     const r = Math.floor(Math.random() * 255);
