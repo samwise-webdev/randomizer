@@ -18,10 +18,14 @@ styleBtn.addEventListener('click', function () {
 })
 
 function randomizedStyle() {
-     let style1 = document.querySelector('.btnStyle1');
-     let style2 = document.querySelector('.btnStyle2');
-     let style3 = document.querySelector('.btnStyle3');
+    //  let style1 = document.querySelector('.btnStyle1');
+    //  let style2 = document.querySelector('.btnStyle2');
+    //  let style3 = document.querySelector('.btnStyle3');
      
+}
+
+function oneToThree(){
+   let num1to3 = Math.floor(Math.random() * 3 + 1);
 }
 
 const randomColor = () => {
