@@ -14,7 +14,8 @@ styleBtn.addEventListener('click', function () {
     // document.getElementById("styleBtn").classList.add("btnStyle1");
     // document.getElementById("styleBtn").classList.add("btnStyle2");
     // document.getElementById("styleBtn").classList.add("btnStyle3");
-    document.querySelector('#styleBtn').classList.add(randomizedStyle);
+    // document.querySelector('#styleBtn').classList.add(randomizedStyle);
+    styleBtn.setAttribute('class', randomizedStyle);
 })
 
 // function randomizedStyle() {
