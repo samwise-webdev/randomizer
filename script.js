@@ -14,26 +14,40 @@ styleBtn.addEventListener('click', function () {
     // document.getElementById("styleBtn").classList.add("btnStyle1");
     // document.getElementById("styleBtn").classList.add("btnStyle2");
     // document.getElementById("styleBtn").classList.add("btnStyle3");
-    document.querySelector('#styleBtn').classList.add('randomizedStyle()');
+    document.querySelector('#styleBtn').classList.add('oneToThree()');
 })
 
-function randomizedStyle() {
-    //  let style1 = document.querySelector('.btnStyle1');
-    //  let style2 = document.querySelector('.btnStyle2');
-    //  let style3 = document.querySelector('.btnStyle3');
-    function oneToThree(){
-        let num1to3 = Math.floor(Math.random() * 3 + 1);
-        if (num1to3 === 3) {
-            return 3;
-         } else if (num1to3 === 2) {
-            return 2;
-         } else {
-            return 1;
-         }
+// function randomizedStyle() {
+//     //  let style1 = document.querySelector('.btnStyle1');
+//     //  let style2 = document.querySelector('.btnStyle2');
+//     //  let style3 = document.querySelector('.btnStyle3');
+//     let styleNumber = oneToThree();
+//     function oneToThree(){
+//         let num1to3 = Math.floor(Math.random() * 3 + 1);
+//         if (num1to3 === 1) {
+//             return document.querySelector('.btnStyle1');
+//          } else if (num1to3 === 2) {
+//             return document.querySelector('.btnStyle2');
+//          } else {
+//             return document.querySelector('.btnStyle3');
+//          }
+//      }
+//      return styleNumber;
+// }
+
+function oneToThree(){
+    let num1to3 = Math.floor(Math.random() * 3 + 1);
+    if (num1to3 === 1) {
+        return 'btnStyle1';
+        console.log(1);
+     } else if (num1to3 === 2) {
+        return 'btnStyle2';
+        console.log(2);
+     } else {
+        return 'btnStyle3';
+        console.log(3);
      }
-}
-
-
+ }
 
 const randomColor = () => {
     const r = Math.floor(Math.random() * 255);
