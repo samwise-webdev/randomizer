@@ -1,5 +1,5 @@
 const bgColorBtn = document.querySelector('#bgBtn');
-const styleBtn = document.querySelector('#styleBtn');
+const h1 = document.querySelector('h1');
 // const style1 = document.getElementById("#styleBtn").classList.add("btnStyle1");
 // const style2 = document.getElementById("#styleBtn").classList.add("btnStyle2");
 // const style3 = document.getElementById("#styleBtn").classList.add("btnStyle3");
@@ -10,7 +10,7 @@ bgColorBtn.addEventListener('click', function() {
 })
 
 
-styleBtn.addEventListener('click', function () {
+bgColorBtn.addEventListener('click', function () {
     //styleBtn.classList.remove('btnStyle1', 'btnStyle2', 'btnStyle3');
     // document.getElementById("styleBtn").classList.add("btnStyle1");
     // document.getElementById("styleBtn").classList.add("btnStyle2");
@@ -29,7 +29,7 @@ styleBtn.addEventListener('click', function () {
             }
         }
 
-    styleBtn.setAttribute('class', randomizedStyle);
+        bgColorBtn.setAttribute('class', randomizedStyle);
 })
 
 // function randomizedStyle() {
@@ -66,5 +66,10 @@ const randomColor = () => {
     const r = Math.floor(Math.random() * 255);
     const g = Math.floor(Math.random() * 255);
     const b = Math.floor(Math.random() * 255);
+    if (r < 100 && g < 100 && b < 100) {
+        h1.style.color = 'white';
+    } else {
+        h1.style.color = 'black';
+    } 
     return `rgb(${r}, ${g}, ${b})`;
 }
