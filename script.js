@@ -1,5 +1,8 @@
 const bgColorBtn = document.querySelector('#bgBtn');
-const bgStyleBtn = document.querySelector('#styleBtn');
+const styleBtn = document.querySelector('#styleBtn');
+// const style1 = document.getElementById("#styleBtn").classList.add("btnStyle1");
+// const style2 = document.getElementById("#styleBtn").classList.add("btnStyle2");
+// const style3 = document.getElementById("#styleBtn").classList.add("btnStyle3");
 
 bgColorBtn.addEventListener('click', function() {
     const newColor = randomColor();
@@ -7,8 +10,10 @@ bgColorBtn.addEventListener('click', function() {
 })
 
 
-btnStyle.addEventListener('click', function () {
-    //apply classes - idk if I will have to make the classes into numbered variables and then apply them that way or not
+styleBtn.addEventListener('click', function () {
+    document.getElementById("styleBtn").classList.add("btnStyle1");
+    document.getElementById("styleBtn").classList.add("btnStyle2");
+    document.getElementById("styleBtn").classList.add("btnStyle3");
 })
 
 const randomColor = () => {
