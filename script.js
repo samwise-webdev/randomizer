@@ -11,6 +11,7 @@ bgColorBtn.addEventListener('click', function() {
 
 
 styleBtn.addEventListener('click', function () {
+    styleBtn.removeAttribute('class');
     // document.getElementById("styleBtn").classList.add("btnStyle1");
     // document.getElementById("styleBtn").classList.add("btnStyle2");
     // document.getElementById("styleBtn").classList.add("btnStyle3");
