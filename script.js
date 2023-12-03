@@ -14,7 +14,7 @@ styleBtn.addEventListener('click', function () {
     // document.getElementById("styleBtn").classList.add("btnStyle1");
     // document.getElementById("styleBtn").classList.add("btnStyle2");
     // document.getElementById("styleBtn").classList.add("btnStyle3");
-    document.querySelector('#styleBtn').classList.add('oneToThree()');
+    document.querySelector('#styleBtn').classList.add(randomizedStyle);
 })
 
 // function randomizedStyle() {
@@ -34,18 +34,16 @@ styleBtn.addEventListener('click', function () {
 //      }
 //      return styleNumber;
 // }
+const randomizedStyle = oneToThree();
 
 function oneToThree(){
     let num1to3 = Math.floor(Math.random() * 3 + 1);
     if (num1to3 === 1) {
         return 'btnStyle1';
-        console.log(1);
      } else if (num1to3 === 2) {
         return 'btnStyle2';
-        console.log(2);
      } else {
-        return 'btnStyle3';
-        console.log(3);
+        return 'btnStyle3';    
      }
  }
 
